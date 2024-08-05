@@ -1,7 +1,7 @@
 <template>
   <button type="button" class="row">
 
-    <img :src="path" :alt="img">
+    <img :src="'./' + img" :alt="img">
     <span :class="['name', group]">{{ name }}</span>
   </button>
 </template>
