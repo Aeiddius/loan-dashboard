@@ -1,0 +1,56 @@
+$failure: #ea4a41;
+$success: #44bf6b;
+$primary: #4193ea;
+$border: #cecece;
+$fade: #3d3d3d80;
+$sidebarwidth: 220px;
+
+@mixin roboto-regular {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin roboto-bold {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin roboto-medium {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-medium {
+  @include roboto-medium;
+}
+
+.roboto-regular {
+  @include roboto-regular;
+}
+
+.roboto-bold {
+  @include roboto-bold;
+}
+
+@mixin border {
+  border: 1px solid $border;
+  border-radius: 5px;
+}
+
+@mixin border-bottom {
+  border-bottom: 1px solid $border;
+}
+
+@mixin shadow-hover {
+  transition: all 0.5s ease;
+  box-shadow: none;
+  cursor: pointer;
+
+  &:hover {
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
